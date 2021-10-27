@@ -1,0 +1,195 @@
+/* AJUSTES GENERALES *********************/
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("./fonts/PlayfairDisplay-Regular.ttf");
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
+h1,h2{
+    font-family: "PlayfairDisplay";
+}
+
+p{
+    margin: 0;
+}
+
+.pequeño{
+    width: 20px;
+}
+
+.gris {
+    color: gray;
+}
+.naranja {
+    color: #F2994A;
+}
+
+/* PLATO **********************************/
+.plato-icono1{
+    padding: 4px 6px;
+}
+.plato-titulo{
+    margin-top: 30px;
+    padding: 5px 10px;
+    line-height: 32px;
+    font-family: "PlayfairDisplay";
+}
+.plato-parrafo{
+    padding: 10px 10px;
+    margin: 10px 0 30px;
+    color: #4F4F4F;
+    font-style: italic;
+}
+.plato-img{
+    width: 100%;
+}
+
+.plato-datos{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.plato-spoon-kinfe, .yields{
+    display: inline-block;
+    padding: 5px;
+}
+
+.plato-3iconos{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+.icono1 img{
+    display: inline-block;
+}
+
+/* INGREDIENTE***************************** */
+
+.ingrediente h1{
+    margin-bottom: 20px;
+}
+
+.ingrediente{
+    font-weight: 400;
+    padding: 10px;
+}
+
+.ingrediente p {
+    font-weight: 24px;
+}
+
+.ingrediente span {
+    font-weight: bold;   
+}
+ul{
+    list-style: none;
+}
+ul li{
+    padding: 6px 0px;
+}
+
+/* INSTRUCCIONES ***********************/
+
+.instruciones{
+    padding: 10px;
+}
+
+.instruciones h1 {
+    margin-bottom: 20px;
+}
+
+.instruciones span{
+    font-weight: bold;
+}
+
+.instruciones p {
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.cont-num{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.numero{
+    background-color: #F2994A;
+    padding: 5px 15px 12px;
+    margin: 5px 15px 15px; 
+    font-size: 25px;
+    font-weight:900;
+    color: white;
+    border-radius: 5px;
+    font-family: "PlayfairDisplay";
+}
+
+.cont-num p {
+    width: 70%;
+    margin-bottom:40px
+}
+
+/* FUENTE************************* */
+.fuente p {
+    color: rgb(218, 214, 210);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* FOOTER **********************/
+footer p {
+    color: rgb(95, 95, 94);
+    text-align: center;
+}
+
+/* MEDIAQUERIES */
+@media (min-width:1024px) {
+    .todo {
+        max-width: 969px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .plato-datos {
+        margin-top: 40px;
+        box-shadow: 0px 0px 20px 0px #0000001A;
+        float: right;
+        width: auto;
+        padding: 30px 20px 20px 20px;
+        border-radius: 10px;
+    }
+    .plato-3iconos{
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .icono1{
+        margin-top: 30px;
+    }
+
+    .ingrediente,.plato-parrafo {
+        width: 60%;
+    }
+    .instruciones{
+        width: 75%;
+    }
+
+}
+
+
